@@ -1,0 +1,92 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_taskName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_taskDate",
+						"type": "string"
+					}
+				],
+				"name": "createTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_taskId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_taskName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_taskDate",
+						"type": "string"
+					}
+				],
+				"name": "updateTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Todo.sol": "Todo"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Todo.sol": {
+			"keccak256": "0xf6149c6c9b025f66d787a47b3a6a05032e30d45d44403888c7dc97248dc0a395",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e3027749f1a865774033f3108b949cb8d709da7e44693453f571f62d3bb3b525",
+				"dweb:/ipfs/QmWMsh733PRs6bh4iBdHB5fUE3Fz6wYa7ybyf5uE35Wkqt"
+			]
+		}
+	},
+	"version": 1
+}
