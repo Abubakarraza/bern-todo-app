@@ -11,6 +11,36 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "allTask",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "date",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Todo.Task[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -24,6 +54,19 @@
 					}
 				],
 				"name": "createTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_taskId",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteTask",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -49,6 +92,42 @@
 				"name": "updateTask",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_taskId",
+						"type": "uint256"
+					}
+				],
+				"name": "viewTask",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "date",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Todo.Task",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -80,11 +159,11 @@
 	},
 	"sources": {
 		"contracts/Todo.sol": {
-			"keccak256": "0xf6149c6c9b025f66d787a47b3a6a05032e30d45d44403888c7dc97248dc0a395",
+			"keccak256": "0x374642f28b9d598f0cd7700cd561c941653bcdb1db4dc06d73578cb551d2944c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e3027749f1a865774033f3108b949cb8d709da7e44693453f571f62d3bb3b525",
-				"dweb:/ipfs/QmWMsh733PRs6bh4iBdHB5fUE3Fz6wYa7ybyf5uE35Wkqt"
+				"bzz-raw://668163f9c2dd6ebcd80675e0122c2d59b4833d806a82ad380b7a534eb02e2a8c",
+				"dweb:/ipfs/QmafiNdRnShFZfxgBGw8peGqFfRHY6zV8xe1FUs1rqCnp1"
 			]
 		}
 	},
