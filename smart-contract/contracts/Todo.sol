@@ -8,6 +8,7 @@ contract Todo {
         string name;
         string date;
     }
+
     address owner;
     Task task;
     mapping(uint256 => Task) tasks;
