@@ -58,4 +58,5 @@ contract Todo {
     function deleteTask(uint256 _taskId) public checkId(_taskId) {
         delete tasks[_taskId];
     }
+
 }
